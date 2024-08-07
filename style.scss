@@ -1,0 +1,114 @@
+body {
+  margin: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(187, 51, 51);
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+#todo {
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+  width: 550px;
+  background-color: rgb(249, 235, 235);
+  padding: 30px;
+  border-radius: 20px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    .tasks-state {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      button {
+        margin: 0;
+        transition: 0.2s ease-in-out;
+        border: none;
+        border-radius: 5px;
+        padding: 7px 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        color: white;
+        background-color: #bb5858;
+        &:hover {
+          background-color: #a94848;
+        }
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: row;
+      #todo-text {
+        padding-left: 13px;
+        width: 300px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        background-color: rgb(229, 196, 196);
+      }
+      button {
+        border: none;
+        border-radius: 0 10px 10px 0;
+        width: 100px;
+        height: 40px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        background-color: rgb(187, 51, 51);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          background-color: rgb(167, 36, 36);
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        font-size: 18px;
+        list-style: none;
+        padding: 7px;
+        color: #995656;
+        .btn-edit {
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          color: white;
+          background-color: #bb5858;
+          &:hover {
+            background-color: #a94848;
+          }
+        }
+        span {
+          padding: 0 10px 0 5px;
+        }
+        .completed {
+          text-decoration: line-through;
+          color: #4f4f4f;
+        }
+        .btn-delete {
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: rgb(187, 51, 51);
+          color: white;
+          margin-left: 10px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            background-color: rgb(167, 36, 36);
+          }
+        }
+      }
+    }
+  }
+}

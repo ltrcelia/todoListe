@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="exo-todo.js" defer></script>
+  </head>
+  <body>
+    <div id="todo">
+      <h1>Todo liste</h1>
+      <div class="container">
+        <form action="" class="form">
+          <input type="text" id="todo-text" placeholder="Entrez une tâche" />
+          <button type="submit">Ajouter</button>
+        </form>
+        <div class="tasks-state">
+          <button id="all">Tout</button>
+          <button id="completed">Complété</button>
+          <button id="incomplete">Non complété</button>
+        </div>
+        <ul id="todo-ul"></ul>
+      </div>
+    </div>
+  </body>
+</html>
